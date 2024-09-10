@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 24.25, 17.5" name="QuanLyMayBay">
+  <DataContextMoniker Name="/QuanLyMayBayDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d7ae3b54-d517-4341-8415-2adb66aae527" absoluteBounds="1.875, 4.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/BaoCaoDoanhThu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28afaf88-34db-4870-a4e3-fb5ea0162fcf" absoluteBounds="1.8900000000000001, 4.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d36213c-f2cb-47de-aa63-745da97ff55e" absoluteBounds="5.125, 4.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/ChiTietDoanhThu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2b86d3c-35d3-49bb-97ce-aab4d310dbc0" absoluteBounds="5.14, 4.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81cec157-3717-438c-93df-79fcacf00e18" absoluteBounds="6.25, 7.25, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/ChuyenBay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cc6154f-8fc8-4d6a-811e-44afc1cdb396" absoluteBounds="6.265, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a1c3328-e063-4334-b862-b856af92e0b3" absoluteBounds="12, 13, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/Ghe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b014863d-4428-4937-b7bb-05236a392876" absoluteBounds="12.015, 13.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c83ba19f-9905-4c3f-b8e7-b425dab37034" absoluteBounds="9, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/GiaVe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8670132-0668-4f82-a570-ac29c344028a" absoluteBounds="9.015, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74065ccd-2604-4c6a-bb77-8b24e0e15d66" absoluteBounds="9, 14.875, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/HanhKhach" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bc39503-04b0-4dd6-a88c-720468191812" absoluteBounds="9.015, 15.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc3c25e8-ce06-4531-b466-a32fbcc48ab6" absoluteBounds="9, 10.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/HangVe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50172e30-3da0-4be9-9bd3-515553f5ef86" absoluteBounds="9.015, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ae2b76d-61f9-4c86-b208-e892cb5962c2" absoluteBounds="11.75, 7.125, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/HoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4ec9551-e283-4618-9aa3-274874f55a50" absoluteBounds="11.765, 7.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" absoluteBounds="9, 6.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/LichBay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3232a0d3-af24-4727-a9c1-ee20f1866782" absoluteBounds="9.015, 7.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5b1d7cc-1e81-4aee-af4d-ac241b8e8f80" absoluteBounds="14.125, 4.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/LichBay_GiaVe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8385300-f14d-4eb9-acfe-e92282d93eaf" absoluteBounds="14.14, 4.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e0b8f27b-458b-4fb3-945d-4b25306563f6" absoluteBounds="6.25, 9.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/MayBay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a0b3068-b8e4-4c62-ae4f-18d839991e91" absoluteBounds="6.265, 10.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6362599d-93a5-4106-9915-08cd90ab8f3b" absoluteBounds="14.875, 7.375, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/MayBay_Ghe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eab7c578-469e-4963-b0f2-405fb7e54d2c" absoluteBounds="14.89, 7.8350000000000009, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8403177-875a-4855-b85c-83da42cde9c3" absoluteBounds="6.25, 12.125, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3b61c2f-db20-41de-9b8b-16a023855ba9" absoluteBounds="6.265, 12.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0987162f-1558-4e1e-bff1-13ac7e3e5d62" absoluteBounds="9, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/PhieuDatCho" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9059d8e6-b60a-4f27-bea9-9180bef91b80" absoluteBounds="9.015, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba44017c-0270-4fd6-9597-6339f920aaf2" absoluteBounds="0.75, 7.25, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/SanBay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e791fe17-d201-4b7c-a26b-c3fe95f4dc3e" absoluteBounds="0.765, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="04db9fdb-f652-46c0-8f38-be501164f400" absoluteBounds="8.25, 3.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/SanBayTrungGian" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f89b4c7-f6bc-4b56-a19b-c52fbd470795" absoluteBounds="8.265, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cb69329-367a-4a9e-9250-7e9d07ca052b" absoluteBounds="3.5, 12.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/TaiKhoan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="301dad93-afa9-4564-abe4-a1343a1fa880" absoluteBounds="3.515, 12.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b1ecbdda-3913-4002-9b97-a92153896f56" absoluteBounds="3.75, 7.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/TuyenBay" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1bbb73e-78ad-4005-88dc-9f0f24d8bf64" absoluteBounds="3.765, 7.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="162e8786-c301-4ebe-adb6-b05906500de5" absoluteBounds="17.875, 6.25, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/VeDat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38ea4cda-bf01-4650-aeb3-789fe16476fc" absoluteBounds="17.89, 6.7100000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a428847-787b-434e-b7fd-21530772664e" absoluteBounds="15.125, 10.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/VeBan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83058995-c9ea-4d7f-b052-a803cf282a64" absoluteBounds="15.14, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 5.16429768880208); (5.125 : 5.16429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/BaoCaoDoanhThu/BaoCaoDoanhThu_ChiTietDoanhThu" />
+      <nodes>
+        <classShapeMoniker Id="d7ae3b54-d517-4341-8415-2adb66aae527" />
+        <classShapeMoniker Id="1d36213c-f2cb-47de-aa63-745da97ff55e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 8.01044840494792); (11.2916666666667 : 8.01044840494792 : JumpStart); (11.4583333333333 : 8.01044840494792 : JumpEnd); (11.75 : 8.01044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/LichBay/LichBay_HoaDon" />
+      <nodes>
+        <classShapeMoniker Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" />
+        <classShapeMoniker Id="8ae2b76d-61f9-4c86-b208-e892cb5962c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.94314697265625); (9 : 7.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/ChuyenBay/ChuyenBay_LichBay" />
+      <nodes>
+        <classShapeMoniker Id="81cec157-3717-438c-93df-79fcacf00e18" />
+        <classShapeMoniker Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.65625 : 2.56899251302083); (10.65625 : 5.6194482421875); (11.2916666666667 : 5.6194482421875 : JumpStart); (11.4583333333333 : 5.6194482421875 : JumpEnd); (14.125 : 5.6194482421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/GiaVe/GiaVe_LichBay_GiaVe" />
+      <nodes>
+        <classShapeMoniker Id="c83ba19f-9905-4c3f-b8e7-b425dab37034" />
+        <classShapeMoniker Id="e5b1d7cc-1e81-4aee-af4d-ac241b8e8f80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.9807124286358 : 10.375); (11.375 : 9.98071242863582); (11.375 : 4.84097212109375); (14.125 : 4.84097212109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/HangVe/HangVe_LichBay_GiaVe" />
+      <nodes>
+        <classShapeMoniker Id="dc3c25e8-ce06-4531-b466-a32fbcc48ab6" />
+        <classShapeMoniker Id="e5b1d7cc-1e81-4aee-af4d-ac241b8e8f80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 6.96875); (11.2916666666667 : 6.96875 : JumpStart); (11.4583333333333 : 6.96875 : JumpEnd); (14.46875 : 6.96875); (14.46875 : 6.28049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/LichBay/LichBay_LichBay_GiaVe" />
+      <nodes>
+        <classShapeMoniker Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" />
+        <classShapeMoniker Id="e5b1d7cc-1e81-4aee-af4d-ac241b8e8f80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 9.875); (8.625 : 9.5); (8.625 : 7.95274983723958); (9 : 7.95274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/MayBay/MayBay_LichBay" />
+      <nodes>
+        <classShapeMoniker Id="e0b8f27b-458b-4fb3-945d-4b25306563f6" />
+        <classShapeMoniker Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.90625 : 13); (13.90625 : 9.05214680989583); (14.875 : 9.05214680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/Ghe/Ghe_MayBay_Ghe" />
+      <nodes>
+        <classShapeMoniker Id="5a1c3328-e063-4334-b862-b856af92e0b3" />
+        <classShapeMoniker Id="6362599d-93a5-4106-9915-08cd90ab8f3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 10.3952050271434); (11.3952050271434 : 10); (14.5416666666667 : 10 : JumpStart); (14.7083333333333 : 10 : JumpEnd); (14.8854166666667 : 10 : JumpStart); (15.0520833333333 : 10 : JumpEnd); (15.875 : 10); (15.875 : 9.14589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/HangVe/HangVe_MayBay_Ghe" />
+      <nodes>
+        <classShapeMoniker Id="dc3c25e8-ce06-4531-b466-a32fbcc48ab6" />
+        <classShapeMoniker Id="6362599d-93a5-4106-9915-08cd90ab8f3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 10.15625); (14.5416666666667 : 10.15625 : JumpStart); (14.7083333333333 : 10.15625 : JumpEnd); (14.96875 : 10.15625); (14.96875 : 9.14589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/MayBay/MayBay_MayBay_Ghe" />
+      <nodes>
+        <classShapeMoniker Id="e0b8f27b-458b-4fb3-945d-4b25306563f6" />
+        <classShapeMoniker Id="6362599d-93a5-4106-9915-08cd90ab8f3b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.125); (8.75 : 11.625); (8.75 : 7.95274983723958); (9 : 7.95274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/NhanVien/NhanVien_LichBay" />
+      <nodes>
+        <classShapeMoniker Id="a8403177-875a-4855-b85c-83da42cde9c3" />
+        <classShapeMoniker Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.6875 : 7.25); (7.6875 : 3.71875); (8.25 : 3.71875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/ChuyenBay/ChuyenBay_SanBayTrungGian" />
+      <nodes>
+        <classShapeMoniker Id="81cec157-3717-438c-93df-79fcacf00e18" />
+        <classShapeMoniker Id="04db9fdb-f652-46c0-8f38-be501164f400" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.28125 : 7.25); (1.28125 : 4.0468775); (7.60416666666667 : 4.0468775 : JumpStart); (7.77083333333333 : 4.0468775 : JumpEnd); (8.25 : 4.0468775)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/SanBay/SanBay_SanBayTrungGian" />
+      <nodes>
+        <classShapeMoniker Id="ba44017c-0270-4fd6-9597-6339f920aaf2" />
+        <classShapeMoniker Id="04db9fdb-f652-46c0-8f38-be501164f400" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 13.9535953776042); (4.5 : 16.0489005533854); (9 : 16.0489005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/TaiKhoan/TaiKhoan_HanhKhach" />
+      <nodes>
+        <classShapeMoniker Id="4cb69329-367a-4a9e-9250-7e9d07ca052b" />
+        <classShapeMoniker Id="74065ccd-2604-4c6a-bb77-8b24e0e15d66" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.1642976888021); (6.25 : 13.1642976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/TaiKhoan/TaiKhoan_NhanVien" />
+      <nodes>
+        <classShapeMoniker Id="4cb69329-367a-4a9e-9250-7e9d07ca052b" />
+        <classShapeMoniker Id="a8403177-875a-4855-b85c-83da42cde9c3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.4375 : 7.25); (5.4375 : 6.3381982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/TuyenBay/TuyenBay_ChiTietDoanhThu" />
+      <nodes>
+        <classShapeMoniker Id="b1ecbdda-3913-4002-9b97-a92153896f56" />
+        <classShapeMoniker Id="1d36213c-f2cb-47de-aa63-745da97ff55e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 7.94314697265625); (6.25 : 7.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/TuyenBay/TuyenBay_ChuyenBay" />
+      <nodes>
+        <classShapeMoniker Id="b1ecbdda-3913-4002-9b97-a92153896f56" />
+        <classShapeMoniker Id="81cec157-3717-438c-93df-79fcacf00e18" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.94314697265625); (3.75 : 7.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/SanBay/SanBay_TuyenBay" />
+      <nodes>
+        <classShapeMoniker Id="ba44017c-0270-4fd6-9597-6339f920aaf2" />
+        <classShapeMoniker Id="b1ecbdda-3913-4002-9b97-a92153896f56" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.53407348632812); (3.75 : 7.53407348632812)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/SanBay/SanBay_TuyenBay1" />
+      <nodes>
+        <classShapeMoniker Id="ba44017c-0270-4fd6-9597-6339f920aaf2" />
+        <classShapeMoniker Id="b1ecbdda-3913-4002-9b97-a92153896f56" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 11.0133507700821); (14.625 : 11.0133507700821); (14.625 : 9.625); (17.4166666666667 : 9.625 : JumpStart); (17.5833333333333 : 9.625 : JumpEnd); (18.875 : 9.625); (18.875 : 8.59780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/HangVe/HangVe_VeDat" />
+      <nodes>
+        <classShapeMoniker Id="dc3c25e8-ce06-4531-b466-a32fbcc48ab6" />
+        <classShapeMoniker Id="162e8786-c301-4ebe-adb6-b05906500de5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 14.875); (10 : 14.3862939453125); (11.5 : 14.3862939453125); (11.5 : 6.625); (14.3854166666667 : 6.625 : JumpStart); (14.5520833333333 : 6.625 : JumpEnd); (17.5 : 6.625); (17.5 : 7.42390055338542); (17.875 : 7.42390055338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/HanhKhach/HanhKhach_VeDat" />
+      <nodes>
+        <classShapeMoniker Id="74065ccd-2604-4c6a-bb77-8b24e0e15d66" />
+        <classShapeMoniker Id="162e8786-c301-4ebe-adb6-b05906500de5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 6.875); (10 : 6.48399983723958); (17.875 : 6.48399983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/LichBay/LichBay_VeDat" />
+      <nodes>
+        <classShapeMoniker Id="c18a9c16-3ebf-4fdc-8ed1-7dd049b50fe7" />
+        <classShapeMoniker Id="162e8786-c301-4ebe-adb6-b05906500de5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10 : 12.75); (10 : 11.8189925130208); (17.5 : 11.8189925130208); (17.5 : 8.04210283007813); (17.875 : 8.04210283007813)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/PhieuDatCho/PhieuDatCho_VeDat" />
+      <nodes>
+        <classShapeMoniker Id="0987162f-1558-4e1e-bff1-13ac7e3e5d62" />
+        <classShapeMoniker Id="162e8786-c301-4ebe-adb6-b05906500de5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 12.4375025); (9.91666666666667 : 12.4375025 : JumpStart); (10.0833333333333 : 12.4375025 : JumpEnd); (13.8229166666667 : 12.4375025 : JumpStart); (13.9895833333333 : 12.4375025 : JumpEnd); (16.125 : 12.4375025); (16.125 : 11.5689925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/NhanVien/NhanVien_VeBan" />
+      <nodes>
+        <classShapeMoniker Id="a8403177-875a-4855-b85c-83da42cde9c3" />
+        <classShapeMoniker Id="6a428847-787b-434e-b7fd-21530772664e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.875 : 6.96875); (17.03125 : 6.96875); (17.03125 : 10.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QuanLyMayBayDataContext/VeDat/VeDat_VeBan" />
+      <nodes>
+        <classShapeMoniker Id="162e8786-c301-4ebe-adb6-b05906500de5" />
+        <classShapeMoniker Id="6a428847-787b-434e-b7fd-21530772664e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a36636d2-3a8c-46b1-abec-e8abbecd7e66" absoluteBounds="22, 8.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/BaiViet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63a4c4d4-0718-41b6-a26c-cb67df8f8dca" absoluteBounds="22.015, 9.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b927c93-9888-4adf-978f-2c221f32e4cd" absoluteBounds="17.75, 10.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/QuanLyMayBayDataContext/TinTuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="921808f3-dbc2-4b56-bf0a-a3469798c6b1" absoluteBounds="17.765, 10.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

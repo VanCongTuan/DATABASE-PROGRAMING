@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WebQuanLyMayBay" Class="QuanLyMayBayDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=vctuan\vancongtuan;Initial Catalog=WebQuanLyMayBay;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="WebQuanLyMayBayConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BaoCaoDoanhThu" Member="BaoCaoDoanhThus">
+    <Type Name="BaoCaoDoanhThu">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ngayXuat" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="thangDoanhThu" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="tongDoanhThu" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="BaoCaoDoanhThu_ChiTietDoanhThu" Member="ChiTietDoanhThus" ThisKey="id" OtherKey="BaoCao_id" Type="ChiTietDoanhThu" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChiTietDoanhThu" Member="ChiTietDoanhThus">
+    <Type Name="ChiTietDoanhThu">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tuyenBay_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="BaoCao_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="soLuotBay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tyLe" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="doanhThu" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="BaoCaoDoanhThu_ChiTietDoanhThu" Member="BaoCaoDoanhThu" ThisKey="BaoCao_id" OtherKey="id" Type="BaoCaoDoanhThu" IsForeignKey="true" />
+      <Association Name="TuyenBay_ChiTietDoanhThu" Member="TuyenBay" ThisKey="tuyenBay_id" OtherKey="maTuyenBay" Type="TuyenBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ChuyenBay" Member="ChuyenBays">
+    <Type Name="ChuyenBay">
+      <Column Name="MaCB" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenTuyenBay" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="id_TuyenBay" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="ChuyenBay_LichBay" Member="LichBays" ThisKey="MaCB" OtherKey="id_ChuyenBay" Type="LichBay" />
+      <Association Name="ChuyenBay_SanBayTrungGian" Member="SanBayTrungGians" ThisKey="MaCB" OtherKey="maCb" Type="SanBayTrungGian" />
+      <Association Name="TuyenBay_ChuyenBay" Member="TuyenBay" ThisKey="id_TuyenBay" OtherKey="maTuyenBay" Type="TuyenBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ghe" Member="Ghes">
+    <Type Name="Ghe">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenGhe" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="dayGhe" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Association Name="Ghe_MayBay_Ghe" Member="MayBay_Ghes" ThisKey="id" OtherKey="ghe_id" Type="MayBay_Ghe" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GiaVe" Member="GiaVes">
+    <Type Name="GiaVe">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Gia" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="GiaVe_LichBay_GiaVe" Member="LichBay_GiaVes" ThisKey="id" OtherKey="id_GiaVe" Type="LichBay_GiaVe" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HanhKhach" Member="HanhKhaches">
+    <Type Name="HanhKhach">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ngSinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CCCD" Type="System.String" DbType="NVarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="sdt" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id_TKKH" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="HanhKhach_VeDat" Member="VeDats" ThisKey="id" OtherKey="hanhKhach_id" Type="VeDat" />
+      <Association Name="TaiKhoan_HanhKhach" Member="TaiKhoan" ThisKey="id_TKKH" OtherKey="id" Type="TaiKhoan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HangVe" Member="HangVes">
+    <Type Name="HangVe">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="loaiHang" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="HangVe_LichBay_GiaVe" Member="LichBay_GiaVes" ThisKey="id" OtherKey="id_HangVe" Type="LichBay_GiaVe" />
+      <Association Name="HangVe_MayBay_Ghe" Member="MayBay_Ghes" ThisKey="id" OtherKey="hangVe_id" Type="MayBay_Ghe" />
+      <Association Name="HangVe_VeDat" Member="VeDats" ThisKey="id" OtherKey="maHangVe" Type="VeDat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HoaDon" Member="HoaDons">
+    <Type Name="HoaDon">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ngayLap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="tongTien" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NgHetHanThanhToan" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="lichBay" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="LichBay_HoaDon" Member="LichBay1" ThisKey="lichBay" OtherKey="MaLB" Type="LichBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LichBay" Member="LichBays">
+    <Type Name="LichBay">
+      <Column Name="MaLB" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgayBay" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="thoiGianBay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="trangThai" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="id_MayBay" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="id_ChuyenBay" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="id_NVLL" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="LichBay_HoaDon" Member="HoaDons" ThisKey="MaLB" OtherKey="lichBay" Type="HoaDon" />
+      <Association Name="LichBay_LichBay_GiaVe" Member="LichBay_GiaVes" ThisKey="MaLB" OtherKey="id_LichBay" Type="LichBay_GiaVe" />
+      <Association Name="LichBay_VeDat" Member="VeDats" ThisKey="MaLB" OtherKey="lichbay_id" Type="VeDat" />
+      <Association Name="ChuyenBay_LichBay" Member="ChuyenBay" ThisKey="id_ChuyenBay" OtherKey="MaCB" Type="ChuyenBay" IsForeignKey="true" />
+      <Association Name="MayBay_LichBay" Member="MayBay" ThisKey="id_MayBay" OtherKey="maMb" Type="MayBay" IsForeignKey="true" />
+      <Association Name="NhanVien_LichBay" Member="NhanVien" ThisKey="id_NVLL" OtherKey="id" Type="NhanVien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LichBay_GiaVe" Member="LichBay_GiaVes">
+    <Type Name="LichBay_GiaVe">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ngayApDung" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ngayKetThuc" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuongGhe" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_HangVe" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="id_LichBay" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="id_GiaVe" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="GiaVe_LichBay_GiaVe" Member="GiaVe" ThisKey="id_GiaVe" OtherKey="id" Type="GiaVe" IsForeignKey="true" />
+      <Association Name="HangVe_LichBay_GiaVe" Member="HangVe" ThisKey="id_HangVe" OtherKey="id" Type="HangVe" IsForeignKey="true" />
+      <Association Name="LichBay_LichBay_GiaVe" Member="LichBay" ThisKey="id_LichBay" OtherKey="MaLB" Type="LichBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MayBay" Member="MayBays">
+    <Type Name="MayBay">
+      <Column Name="maMb" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenMB" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="hangMB" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="soHieu" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="MayBay_LichBay" Member="LichBays" ThisKey="maMb" OtherKey="id_MayBay" Type="LichBay" />
+      <Association Name="MayBay_MayBay_Ghe" Member="MayBay_Ghes" ThisKey="maMb" OtherKey="mayBay_id" Type="MayBay_Ghe" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MayBay_Ghe" Member="MayBay_Ghes">
+    <Type Name="MayBay_Ghe">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ghe_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="soDayGhe" Type="System.String" DbType="NVarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="hangVe_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="mayBay_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Ghe_MayBay_Ghe" Member="Ghe" ThisKey="ghe_id" OtherKey="id" Type="Ghe" IsForeignKey="true" />
+      <Association Name="HangVe_MayBay_Ghe" Member="HangVe" ThisKey="hangVe_id" OtherKey="id" Type="HangVe" IsForeignKey="true" />
+      <Association Name="MayBay_MayBay_Ghe" Member="MayBay" ThisKey="mayBay_id" OtherKey="maMb" Type="MayBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hovaTen" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ngaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="luong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_TK" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="NhanVien_LichBay" Member="LichBays" ThisKey="id" OtherKey="id_NVLL" Type="LichBay" />
+      <Association Name="NhanVien_VeBan" Member="VeBans" ThisKey="id" OtherKey="id_NVBV" Type="VeBan" />
+      <Association Name="TaiKhoan_NhanVien" Member="TaiKhoan" ThisKey="id_TK" OtherKey="id" Type="TaiKhoan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PhieuDatCho" Member="PhieuDatChos">
+    <Type Name="PhieuDatCho">
+      <Column Name="MaPhieu" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgMua" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TrangThai" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="PhieuDatCho_VeDat" Member="VeDats" ThisKey="MaPhieu" OtherKey="maphieu" Type="VeDat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanBay" Member="SanBays">
+    <Type Name="SanBay">
+      <Column Name="maSB" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenSB" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="SanBay_SanBayTrungGian" Member="SanBayTrungGians" ThisKey="maSB" OtherKey="maSb" Type="SanBayTrungGian" />
+      <Association Name="SanBay_TuyenBay" Member="TuyenBays" ThisKey="maSB" OtherKey="id_SbDen" Type="TuyenBay" />
+      <Association Name="SanBay_TuyenBay1" Member="TuyenBays1" ThisKey="maSB" OtherKey="id_SbDi" Type="TuyenBay" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanBayTrungGian" Member="SanBayTrungGians">
+    <Type Name="SanBayTrungGian">
+      <Column Name="maSBTG" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="thoiGianDung" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="maSb" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maCb" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="ChuyenBay_SanBayTrungGian" Member="ChuyenBay" ThisKey="maCb" OtherKey="MaCB" Type="ChuyenBay" IsForeignKey="true" />
+      <Association Name="SanBay_SanBayTrungGian" Member="SanBay" ThisKey="maSb" OtherKey="maSB" Type="SanBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TaiKhoan" Member="TaiKhoans">
+    <Type Name="TaiKhoan">
+      <Column Name="id" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="userrole" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="TaiKhoan_HanhKhach" Member="HanhKhaches" ThisKey="id" OtherKey="id_TKKH" Type="HanhKhach" />
+      <Association Name="TaiKhoan_NhanVien" Member="NhanViens" ThisKey="id" OtherKey="id_TK" Type="NhanVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TuyenBay" Member="TuyenBays">
+    <Type Name="TuyenBay">
+      <Column Name="maTuyenBay" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenTuyenBay" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="id_SbDi" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="id_SbDen" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="TuyenBay_ChiTietDoanhThu" Member="ChiTietDoanhThus" ThisKey="maTuyenBay" OtherKey="tuyenBay_id" Type="ChiTietDoanhThu" />
+      <Association Name="TuyenBay_ChuyenBay" Member="ChuyenBays" ThisKey="maTuyenBay" OtherKey="id_TuyenBay" Type="ChuyenBay" />
+      <Association Name="SanBay_TuyenBay" Member="SanBay" ThisKey="id_SbDen" OtherKey="maSB" Type="SanBay" IsForeignKey="true" />
+      <Association Name="SanBay_TuyenBay1" Member="SanBay1" ThisKey="id_SbDi" OtherKey="maSB" Type="SanBay" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VeDat" Member="VeDats">
+    <Type Name="VeDat">
+      <Column Name="MaVe" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NgDat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="gheDaDat" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="TinhTrangVe" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="lichbay_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="hanhKhach_id" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maHangVe" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="maphieu" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Association Name="VeDat_VeBan" Member="VeBans" ThisKey="MaVe" OtherKey="MaVe" Type="VeBan" />
+      <Association Name="HangVe_VeDat" Member="HangVe" ThisKey="maHangVe" OtherKey="id" Type="HangVe" IsForeignKey="true" />
+      <Association Name="HanhKhach_VeDat" Member="HanhKhach" ThisKey="hanhKhach_id" OtherKey="id" Type="HanhKhach" IsForeignKey="true" />
+      <Association Name="LichBay_VeDat" Member="LichBay" ThisKey="lichbay_id" OtherKey="MaLB" Type="LichBay" IsForeignKey="true" />
+      <Association Name="PhieuDatCho_VeDat" Member="PhieuDatCho" ThisKey="maphieu" OtherKey="MaPhieu" Type="PhieuDatCho" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VeBan" Member="VeBans">
+    <Type Name="VeBan">
+      <Column Name="MaVe" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="id_NVBV" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="NhanVien_VeBan" Member="NhanVien" ThisKey="id_NVBV" OtherKey="id" Type="NhanVien" IsForeignKey="true" />
+      <Association Name="VeDat_VeBan" Member="VeDat" ThisKey="MaVe" OtherKey="MaVe" Type="VeDat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BaiViet" Member="BaiViets">
+    <Type Name="BaiViet">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ModifiedrDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TinTuc" Member="TinTucs">
+    <Type Name="TinTuc">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreateBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedrDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

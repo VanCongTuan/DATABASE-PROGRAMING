@@ -1,0 +1,64 @@
+﻿@model IEnumerable<WebDatVeMayBay.LichBay_GiaVe>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ngayApDung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ngayKetThuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuongGhe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_HangVe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_LichBay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_GiaVe)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngayApDung)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngayKetThuc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongGhe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_HangVe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_LichBay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_GiaVe)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

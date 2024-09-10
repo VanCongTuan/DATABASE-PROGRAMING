@@ -1,0 +1,49 @@
+﻿@model WebDatVeMayBay.TaiKhoan
+
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout_BanVe.cshtml";
+}
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title"> @ViewBag.Title </h3>
+        </div>
+        <div>@ViewBag.ErrorMessage </div>
+        <div class="card-body">
+            <div class="bs-stepper linear">
+                <div class="bs-stepper-content">                   
+                        @using (Html.BeginForm("NhanVienLogin", "Login1", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <h4>Vui lòng dùng tài khoản để đăng nhập.</h4>
+                            <hr />
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <div>Đăng nhập</div>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.username, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.username, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>Mật khẩu</div>
+                                <div class="col-md-10">
+                                    @Html.PasswordFor(m => m.password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" value="Log in" class="btn btn-primary">Đăng nhập </button>
+                            </div>                                              
+                    }
+             
+    <div class="card-footer">
+
+    </div>
+    <!-- /.card-footer-->
+</section>
+
+
